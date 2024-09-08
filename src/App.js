@@ -1,15 +1,19 @@
-
+import React from "react";
 import Header from "./components/Header";
-import Slider from "./components/Slider";
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import { Routes, Route, BrowserRouter  } from 'react-router-dom';
+import MainBasics from "./content/Basics/MainBasics";
+import Layout from "./components/Layout";
 
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Header/>
-     
-    </div>
+      <Routes>
+        <Route path="/" element={<Layout/>} />
+        <Route path="/mainbasics" element={<MainBasics/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

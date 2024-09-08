@@ -1,6 +1,8 @@
 import React from 'react'
 import vide from './vide.mp4'
 import { RightCircleOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
+import MainTech from '../content/TechStack/MainTech';
 
 
 function Header() {
@@ -32,7 +34,7 @@ window.addEventListener('mousemove', (e) => {
             
             <h1 className='brand'>Codepect</h1>
             <ul className='uls'>
-                <li>Tech Stack</li>
+                <li><Link to='/MainTech'>Tech Stack</Link></li>
                 <li>Tools</li>
                 <li>Basics</li>
                 <li>Errors</li>
