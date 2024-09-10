@@ -101,7 +101,7 @@ video{
       font-size: 20px;
       left: 72%;
       transform: translate(-50%, -50%);
-      color: rgb(252, 252, 252);
+      color: #333230;
       text-align: center;
     }
 
@@ -110,12 +110,12 @@ video{
   font: bold 26vmax/.8 Open Sans, Impact;
   background: black;
   display: table;
-  color: white;
+  color: rgb(1, 1, 1);
 }
 
 .outPop:hover {
   margin: auto;
-  background-image: #c4bcb3;
+  background-image: #0d0d0d;
   background-size: 0 100%;
   animation: stripes 2s linear 1 forwards;
 }
@@ -146,12 +146,12 @@ canvas {
 .inner{
   width: 5px;
   height: 5px;
-  background: rgb(199, 191, 191);
+  background: rgb(14, 13, 13);
 }
 .outer{
   width: 30px;
   height: 30px;
-  border: 2px solid rgb(199, 195, 195);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .inner,.outer{
@@ -235,15 +235,26 @@ canvas {
   margin-top: 2rem;
   
 }
-
+.carousel{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background:linear-gradient( #868a50);
+  background-color:#c4bcb3; /*this your primary color*/;
+  
+  height: 300px;
+}
 .cards{
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background:linear-gradient( #868a50);
+  background-color:#c4bcb3; /*this your primary color*/;
   
-  background-color: rgb(90, 106, 156);
   height: 300px;
 }
 .maindiv{

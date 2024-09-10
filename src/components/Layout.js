@@ -1,8 +1,11 @@
 import React from 'react'
 import lot from './lot.json'
 import Lottie from 'lottie-react'
-
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import picone from './picone.png'
+import pictwo from './pictwo.png'
+import picthree from './picthree.png'
 function Layout() {
 
   const slides = [
@@ -39,6 +42,20 @@ function Layout() {
         <p>We at</p>
         <h2>Codepect Brings you the Latest Technology that are used in Industry, It let's you create Wonderful Projects .</h2>
       </div>
+      <Carousel>
+                <div className='carousel'>
+                    <img src={picone} />
+                   
+                </div>
+                <div>
+                    <img src={pictwo} />
+                   
+                </div>
+                <div>
+                    <img src={picthree}/>
+                    
+                </div>
+            </Carousel>
    </div>
     
   )
