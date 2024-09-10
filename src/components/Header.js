@@ -1,8 +1,15 @@
-import React from 'react'
+import React,{ Suspense} from 'react'
 import vide from './vide.mp4'
 import { RightCircleOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
-import MainTech from '../content/TechStack/MainTech';
+import { Link, Navigate } from 'react-router-dom';
+import { Canvas } from '@react-three/fiber';
+import { Environment, OrbitControls } from '@react-three/drei';
+import Anim from './Anim.jsx'
+import code from './code.jpg'
+import MainTech from '../content/TechStack/MainTech.js'
+import MainTool from '../Tools/MainTool.js'
+import { useNavigate } from 'react-router-dom';
+
 
 
 function Header() {
@@ -23,19 +30,28 @@ window.addEventListener('mousemove', (e) => {
     fill: 'forwards'
   })
 });
+  const navigate = useNavigate();
+
 
   return (
     <div className='header'>
       
-         <video autoPlay loop muted id="video">
-            <source src={vide} type="video/mp4"/>
-        </video>
+         <Canvas>
+          <ambientLight intensity={-1}/>
+          <OrbitControls/>
+          <Suspense fallback={null}>
+            <Anim/>
+          </Suspense>
+          <Environment preset='sunset'/>
+         </Canvas>
         <div className='nav'>
             
-            <h1 className='brand'>Codepect</h1>
+            <img className='log' src={code} alt='logo' onClick={()=>{
+              navigate('/')
+            }}/>
             <ul className='uls'>
                 <li><Link to='/MainTech'>Tech Stack</Link></li>
-                <li>Tools</li>
+                <li><Link to='/MainTool'/>Tools</li>
                 <li>Basics</li>
                 <li>Errors</li>
                 <li>Contact</li>

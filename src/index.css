@@ -35,34 +35,57 @@ video{
   margin-left: 510px;
   font-weight: bolder;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: rgb(12, 12, 12);
   margin-top: 18px;
+  text-decoration: none;
   list-style: none;
-  font-family:  Helvetica, sans-serif;
+  font-family:'Times New Roman', Times, serif
 }
 .uls>li:hover{
   color: #c4bcb3;
   cursor: pointer;
 }
+
 .brand{
   margin-left: 60px;
   margin-top: 28px;
-  color: rgb(255, 255, 255);
+  color: rgb(37, 36, 36);
   font-size: 30px;
   font-weight:bolder;
+  font-family:  Helvetica, sans-serif;
+}
+.about{
+  margin-top: 200px;
+  font-size: 40px;
+  margin-left:60px ;
+  margin-right:60px ;
+  justify-content: center;
+  align-items: center;
   font-family:  Helvetica, sans-serif;
 }
 .mainbrand{
   position: absolute;
       margin-top: 650px;
+      justify-content: center;
+      margin-left: 50px;
+      align-items: center;
       font-size: 90px;
       -webkit-text-stroke: 0.3vw #c4bcb3;
       left: 49%;
       font-family:  Helvetica, sans-serif;
       transform: translate(-50%, -50%);
-      color: rgb(224, 222, 222);
+      color: rgb(15, 14, 14);
       text-align: center;
       
+    }
+    .paras{
+      margin-top: 30px;
+      justify-content: center;
+    }
+    .heads{
+      margin-top: 30px;
+      justify-content: center;
+      align-items: center;
     }
     .para{
       position: absolute;
@@ -106,10 +129,12 @@ video{
 body {
  
   height: 100%;
-  background: black;
+  background: rgb(90, 106, 156);
   cursor : none;
 }
-
+canvas {
+  height: 100vh !important;
+}
 .inner{
   width: 5px;
   height: 5px;
@@ -156,6 +181,19 @@ body {
   padding: 6px;
   background-color: #c4bcb3;
 }
+.buttons{
+  display: flex;
+}
+.btns{
+  border-radius: 10px;
+  padding: 6px;
+  margin-top: 30px;
+  background-color: #c4bcb3;
+  margin-left: 10px;
+}
+.btns:hover{
+  background-color: #455b9e
+}
 .item{
   width:100%;
   
@@ -197,13 +235,45 @@ body {
   align-items: center;
   flex-wrap: wrap;
   
-  background-color: rgb(81, 126, 126);
+  background-color: rgb(90, 106, 156);
   height: 300px;
 }
+.maindiv{
+  height: 360px;
+  margin-top: 50px;
+  padding-top: 100px ;
+  margin: 30px;
+  flex-wrap: wrap;
+  display: flex;
+}
 
+.divss{
+  margin: 30px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  content: center;
+}
+
+.home{
+  height: 180px;
+  object-fit: cover;
+  
+  margin: 50px;
+  padding: 50px;
+
+}
 .crd{
   gap: 20px;
   height: 240px;
   width: 320px;
   border: 2px solid #c4bcb3;
+}
+
+.log{
+  height: 50px;
+  width: 50px;
+  margin-left: 16px;
+  margin-top: 16px;
 }
