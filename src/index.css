@@ -56,12 +56,20 @@ video{
 }
 .about{
   margin-top: 200px;
-  font-size: 40px;
-  margin-left:60px ;
-  margin-right:60px ;
+  flex-wrap: wrap;
+  color: #2d2626;
+ 
+  font-size: 30px;
+  margin-left:180px ;
+  margin-right:150px ;
   justify-content: center;
   align-items: center;
-  font-family:  Helvetica, sans-serif;
+  font-family: "caudex"
+  "Helvetica Now Text"
+  "Helvetica Neue"
+  Helvetica
+  Arial
+  sans-serif
 }
 .mainbrand{
   position: absolute;
@@ -129,7 +137,7 @@ video{
 body {
  
   height: 100%;
-  background: rgb(90, 106, 156);
+  background-color: #c4bcb3;
   cursor : none;
 }
 canvas {
